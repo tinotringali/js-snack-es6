@@ -46,3 +46,12 @@ const uppercaseName = students.map((element) => {
     return element.name.toUpperCase()
 });
 console.log(uppercaseName);
+
+// lista studenti con voto superiore a 70
+
+const topGrade = students.filter((element) => {
+    if(element.grades > 70){
+        return true;
+    }
+})
+console.log(topGrade);
