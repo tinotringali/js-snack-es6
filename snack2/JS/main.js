@@ -38,3 +38,11 @@ const students =
     grades : '84'
 }
 ]
+console.log(students);
+
+// lista studenti in maiuscolo 
+
+const uppercaseName = students.map((element) => {
+    return element.name.toUpperCase()
+});
+console.log(uppercaseName);
