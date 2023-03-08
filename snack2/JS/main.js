@@ -55,3 +55,12 @@ const topGrade = students.filter((element) => {
     }
 })
 console.log(topGrade);
+
+// lista studenti con voto superiore a 70 e id superiore a 120
+
+const topGradeId = students.filter((element) => {
+    if(element.grades > 70 && element.id > 120){
+        return true;
+    }
+})
+console.log(topGradeId);
