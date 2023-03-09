@@ -32,3 +32,8 @@ bikes.forEach((element) => {
     let { name, weight } = element;
     console.log(name, weight)
 });
+
+const weightBike = bikes.map((element) => {
+    const weight = element.weight;
+    return weight;
+});
