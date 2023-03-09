@@ -41,10 +41,19 @@ const superLega =
 ]
 console.log(superLega)
 
-// punti e falli sqaudre
+// punti e falli subiti squadre
+
 const firstTeam = superLega.map(element => {
     element["Pt"] = getRandomInt(80);
     element ["falliSubiti"] = getRandomInt(150);
     return (element)
 })
 console.log(firstTeam)
+
+// squadra con più falli subiti
+
+const teamWithMorefouls = firstTeam.map((element) => {
+    const {name, falliSubiti} = element;
+    return {name, falliSubiti};
+});
+console.log(teamWithMorefouls)
