@@ -25,3 +25,10 @@ const bikes =
     }
 ];
 console.log(bikes)
+
+//ciclo for each
+
+bikes.forEach((element) => {
+    let { name, weight } = element;
+    console.log(name, weight)
+});
